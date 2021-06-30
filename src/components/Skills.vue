@@ -25,13 +25,14 @@ export default {
             skills: [
                 { "skill": "Vue.js" },
                 { "skill": "Frontend Developer" },
-            ]
+            ],
+            skill: ""
         }
     },
     methods : {
         addSkill(){
             this.skills.push({skill: this.skill});
-            this.skill = '';
+            this.skill = "";
         },
         remove(id) {
             this.skills.splice(id,1);
